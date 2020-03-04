@@ -1,0 +1,15 @@
+.Container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.TextoAlinear{
+    text-align: center;
+}
+
