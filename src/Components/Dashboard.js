@@ -5,10 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CandleChart from "../Containers/CandleChart";
+import RealtimeChart from "../Containers/RealtimeChart";
 
 function Dashboard() {
   return (
-    <div >
+    <div className={classes.Main}>
         <p className={classes.Title}>
             Dashboard
         </p>
@@ -63,6 +64,7 @@ function Dashboard() {
             </Row>
         </Container>
         <CandleChart />
+        <RealtimeChart />
     </div>
   );
 }

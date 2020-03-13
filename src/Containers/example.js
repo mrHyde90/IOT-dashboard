@@ -76,3 +76,75 @@
 const domContainer = document.querySelector('#app');
 ReactDOM.render(React.createElement(ApexChart), domContainer);
 */
+
+/*constructor(props){
+        super(props);
+
+        this.state = {
+            series: [{
+                data: [{
+                    x: new Date('2018-02-12').getTime(),
+                    y: 76
+                  }, {
+                    x: new Date('2018-02-12').getTime(),
+                    y: 76
+                  }]
+            }],
+            options: {
+                chart: {
+                    id: "realtime", //identificador de tipo de linea
+                    height: 350, // Altura de la grafica
+                    type: "line", //tipo de grafica
+                    animations: {
+                        enabled: true, // permite la animacion
+                        easing: "linear",
+                        dynamicAnimation: {
+                            speed: 1000
+                        }
+                    },
+                    toolbar: {
+                        show: false
+                    },
+                    zoom: {
+                        enabled: true
+                    }
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    curve: "smooth"
+                },
+                title: {
+                    text: 'Dynamic Updating Chart',
+                    align: 'left'
+                },
+                markers: {
+                    size: 0
+                },
+                xaxis: {
+                    type: 'datetime',
+                    range: XAXISRANGE,
+                },
+                yaxis: {
+                    max: 100
+                },
+                legend: {
+                    show: false
+                },
+            }
+        }; // termino del state
+    }
+  
+    componentDidMount() {
+      window.setInterval(() => {
+        getNewSeries(lastDate, {
+          min: 10,
+          max: 90
+        })
+        
+        Chart.exec('realtime', 'updateSeries', [{
+          data: data
+        }])
+      }, 1000)
+    }*/
